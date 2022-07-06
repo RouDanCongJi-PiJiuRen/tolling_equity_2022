@@ -1,0 +1,2 @@
+Description: This docker used to run src/census-extract.R and src/census-extract-all-WA-state.R.
+Point person: Shirley 

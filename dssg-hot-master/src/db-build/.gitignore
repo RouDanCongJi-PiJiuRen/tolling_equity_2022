@@ -1,0 +1,6 @@
+*.csv
+*.txt
+*.sql
+*.tsv
+*.db*
+*.bak

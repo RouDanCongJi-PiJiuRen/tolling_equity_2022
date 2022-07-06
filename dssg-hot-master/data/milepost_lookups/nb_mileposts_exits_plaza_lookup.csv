@@ -1,0 +1,11 @@
+Exit plaza name,Exit plaza number,Actual exit,Mile post (SRweb),Loop mile post before exit,Loop mile post after exit,Loop mile post to take,"Diff btwn loop mile and actual mile post (pos = take before, neg = take after)",Notes
+NB01,3,NB Entry 3/Exit 1 (midpt),15.76,16.12,15.63,15.63,0.13,
+NB02,4,NB Entry 3/Exit 1 (midpt),15.76,16.12,15.63,15.63,0.13,
+NB03,5,NB Entry 4/Exit 2 (midpt),19.12,19.21,18.7,19.21,-0.09,
+NB04,6,NB Exit 4,21.86,22.31,21.83,21.83,0.03,
+NB05,7,NB Exit 3 (beginning of off ramp),20.35,20.47,20.22,20.47,-0.12,
+NB06,8,NB Exit 4,21.86,22.31,21.83,21.83,0.03,
+NB07,9,NB Entry 6/Exit 5 (midpt),25.43,25.68,25.17,25.17,0.25,
+NB08,10,NB Entry 7/Exit 6 (midpt),27.80,27.96,27.44,27.96,-0.16,
+NB09,11,NA,NA,NA,NA,28.53,,"Shouldn't exist as exit --> arbitrarily chose loop mile post to take, as detailed in ""Summary of steps to download travel time/speed data"" google doc"
+NB10,12,NB Exit 7,29.22,29.53,28.98,28.98,0.24,

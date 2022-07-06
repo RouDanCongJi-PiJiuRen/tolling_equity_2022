@@ -1,0 +1,15 @@
+-----------------------------------------------------
+SPECIFIC COMMANDS (copy/paste to run)
+-----------------------------------------------------
+STEP 1: BUILD FROM DOCKERFILE
+docker build -t docker_r:v1 .
+--> check Dockerfile for other stuff you have to do to make tidycensus install/work
+
+STEP 2: RUN THE DOCKER
+--> this one for aws
+--> https://medium.com/@guidoman/tutorial-install-and-run-rstudio-server-with-docker-5e67607811a0
+docker run -d --name rstudio -i -t --mount type=bind,src=/home/ubuntu/dssg-hot,dst=/opt/dssg-hot -e PASSWORD=helloshirley -p 8787:8787 docker_r:v1
+
+STEP 3: OPEN R STUDIO ON YOUR LOCAL MACHINE W/ PORT FORWARDING
+--> in local machine browser, go to localhost:8787
+--> username=rstudio, password=helloshirley

@@ -1,0 +1,6 @@
+cbgs_fips_vars.csv
+- Date: August 2019
+- Source: trips data --> aggregated at block group level 
+- Point person: Shirley
+- Associated analyses/files: spatial_analysis_plot_relationships.ipynb used to generate this file
+- Description: many variables aggregated at block group level for plotting on maps and use in tableau

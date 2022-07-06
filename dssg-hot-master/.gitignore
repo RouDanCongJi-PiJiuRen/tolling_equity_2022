@@ -1,0 +1,11 @@
+*.tmp
+*.bak
+*.swp
+.DS_Store
+data/shirleydata/
+notebooks/shirley/figs/
+data/kianadata/
+data/kianacode/
+.ipynb_checkpoints/
+.Rhistory
+.Rapp.history

@@ -1,0 +1,62 @@
+acs_wide_sql_original_bins.csv
+- Date:
+- Source:
+- Point person:
+- Associated analyses/files:
+- Description:
+
+acs_wide_sql_wsdot_bins.csv
+- Date:
+- Source:
+- Point person:
+- Associated analyses/files:
+- Description:
+
+block_group_census_estimates_wide_original_bins.csv
+- Date:
+- Source:
+- Point person:
+- Associated analyses/files:
+- Description:
+
+block_group_census_estimates_wide_wsdot_bins.csv
+- Date:
+- Source:
+- Point person:
+- Associated analyses/files:
+- Description:
+
+block_group_estimates_transit_wide.csv
+- Date:
+- Source:
+- Point person:
+- Associated analyses/files:
+- Description:
+
+acs_wide_sql_original_bins_all_WA.csv
+- Date: Aug 13, 2019
+- Source: 2013-2017 5-year ACS via tidycensus R package
+- Point person: Shirley
+- Associated analyses/files:
+- Description: see dssg-hot/src/census-extract-all-WA-state.R
+
+acs_wide_sql_wsdot_bins_all_WA.csv
+- Date: Aug 13, 2019
+- Source: 2013-2017 5-year ACS via tidycensus R package
+- Point person: Shirley
+- Associated analyses/files:
+- Description: see dssg-hot/src/census-extract-all-WA-state.R
+
+block_group_census_estimates_wide_original_bins_all_WA.csv
+- Date: Aug 13, 2019
+- Source: 2013-2017 5-year ACS via tidycensus R package
+- Point person: Shirley
+- Associated analyses/files:
+- Description: see dssg-hot/src/census-extract-all-WA-state.R
+
+block_group_census_estimates_wide_wsdot_bins_all_WA.csv
+- Date: Aug 13, 2019
+- Source: 2013-2017 5-year ACS via tidycensus R package
+- Point person: Shirley
+- Associated analyses/files:
+- Description: see dssg-hot/src/census-extract-all-WA-state.R

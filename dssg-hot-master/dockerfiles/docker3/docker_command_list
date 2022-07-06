@@ -1,0 +1,10 @@
+-----------------------------------------------------
+SPECIFIC COMMANDS
+-----------------------------------------------------
+1.) create webhook.py file
+(see https://stackoverflow.com/questions/14536992/how-do-i-receive-github-webhooks-in-python/14550821#14550821)
+
+2.) docker build -t docker3:v1 .
+(see docker3/Dockerfile)
+
+3.) docker run --rm -it --mount type=bind,src=/home/shirlleu/dssg-hot/data/shirleydata/traveltimes,dst=/opt/dssg-hot/data/shirleydata/traveltimes -p 80:80 docker3:v1

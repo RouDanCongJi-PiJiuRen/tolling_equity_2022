@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin/>
+<pubdate>20070401</pubdate>
+<title>Open water for King County and portions of adjacent counties</title>
+<edition>One</edition>
+<geoform>vector digital data</geoform>
+<pubinfo>
+<pubplace/>
+<publish>King County</publish>
+</pubinfo>
+<othercit>None</othercit>
+<onlink>https://kingcounty.maps.arcgis.com/home/item.html?id=99b12e16e9e64aa6b0b02ce5d8f1122e</onlink>
+<onlink>https://kingcounty.maps.arcgis.com/home/item.html?id=82d02c72fc924d729f0b8472b1b353ce</onlink>
+<onlink>http://www5.kingcounty.gov/sdc/Metadata.aspx?Layer=wtrbdy</onlink>
+<onlink>http://www5.kingcounty.gov/sdc/addl_doc/KCGISCenterTermsAndConditions.pdf</onlink>
+<onlink>http://www5.kingcounty.gov/sdc/addl_doc/KCGISCenterHelpUsingKCOpenData.pdf</onlink>
+</citeinfo>
+</citation>
+<descript>
+<abstract>Open water features, both natural and anthropic, for King County and portions of adjacent counties. Features can be displayed as water or non water to distinguished between water and land. FEAT_TYPE item defines multiple classes of features, primarily lakes/ponds and streams rivers. Puget Sound and significant double-banked streams and rivers are shown, plus a limited number of manmade features such as aqueducts, ditches, channels and flumes. Areal open water features are mainly differentiated as either Lakes/Ponds or Impoundments roughly defined as natural and anthropic, respectively. This layer includes wetlands only to the extent that the open water portion of emergent wetlands is mapped. A value in the STATUS item indicates whether the water feature is associated with a wetland, dependent on best available ancillary data and orthoimagery. The name of features, where available, is included. By using the SUBSET item the layer can be defined to show only the larger water bodies and rivers.</abstract>
+<purpose>Cartographic and analysis of anthropic and natural open water features. The layer contains a RATE item which is set to CURRENT for this edition, indicating that only the most current (non-historic) water features are shown. Historic (changed) waterbody information can be found in WTRBDY_DET_AREA</purpose>
+<supplinf>Previous editions of this layer also produced a separate BIGWATER layer where the major feature subset was created as a permanent layer. This is no longer created. King County shapefile users can perform a definition query on the SUBSET item, or depend on the WTRBDY_AREA_BIGWATER.AVL legend. Geodatabase featureclass users can also perform a definition query, but may also use the WTRBDY_AREA_BIGWATER.LYR file found in the Plibrary LYR library. Overlapping and some multipart geometry has been removed from this version of WTRBDY in order to simplify its use and display. 1. The tidal line (high-low tide) has been removed from Puget Sound. This information is still available in WTRBDY_DET_AREA.2. Marine islands have been removed completely. If needed these can be found in WASHSH_AREA or KINGSH_AREA which are re-derived each time WTRBDY_AREA is updated. 3. Fresh-water islands are erased from double-banked streams allowing the position of the islands to be determined and for underlying topography to show through. This eliminates the occasions where the islands were previously hidden due to overlapping geometry. Fresh-water islands can still be displayed by querying for this feature type in WTRBDY_DET_AREA or by using the customized LYR file called WTRBDY_DET_AREA_ISLANDS.lyr4. Feature type 406 (Dam, wier, or obscured) that overlap water are also erased. This eliminates some unintentional hidden affects, but primarily improves the display along built-up harbor areas. With these features erased from the water, the fit between current orthoimagery and the egde of water is better. This feature type can also be found in the the ISLANDS customized LYR file described above. The overall intent of these changes is to remove man-made and land features from WTRBDY_AREA to increase the emphasis of this layer as water-only.</supplinf>
+</descript>
+<timeperd>
+<timeinfo>
+<rngdates>
+<begdate>20020601</begdate>
+<enddate>20100201</enddate>
+</rngdates>
+</timeinfo>
+<current>ground condition</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>Annually</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-125.140281</westbc>
+<eastbc>-120.924164</eastbc>
+<northbc>49.097243</northbc>
+<southbc>46.221311</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>ISO 19115 Topic Categories</themekt>
+<themekey>hydrography_OpenData</themekey>
+<themekey>water bodies</themekey>
+<themekey>aqueducts</themekey>
+<themekey>flumes</themekey>
+<themekey>ponds</themekey>
+<themekey>lakes</themekey>
+<themekey>rapids</themekey>
+<themekey>water impoundment</themekey>
+<themekey>fish hatcheries</themekey>
+<themekey>ditches</themekey>
+<themekey>oceans</themekey>
+<themekey>rivers</themekey>
+<themekey>hydro</themekey>
+<themekey>hydrology</themekey>
+<themekey>streams</themekey>
+<themekey>channels</themekey>
+<themekey>environment</themekey>
+<themekey>falls</themekey>
+<themekey>inland waters</themekey>
+<themekey>aqueducts</themekey>
+<themekey>falls</themekey>
+<themekey>oceans</themekey>
+<themekey>ponds</themekey>
+<themekey>hydro</themekey>
+<themekey>rivers</themekey>
+<themekey>inlandWaters</themekey>
+<themekey>flumes</themekey>
+<themekey>lakes</themekey>
+<themekey>fish hatcheries</themekey>
+<themekey>rapids</themekey>
+<themekey>water impoundment</themekey>
+<themekey>water bodies</themekey>
+<themekey>channels</themekey>
+<themekey>ditches</themekey>
+<themekey>streams</themekey>
+<themekey>environment</themekey>
+<themekey>wtrbdy_area</themekey>
+<themekey>kingcounty_opendata</themekey>
+</theme>
+<place>
+<placekt>Not applicable</placekt>
+<placekey>Pacific NW</placekey>
+<placekey>Washington state</placekey>
+<placekey>Pierce County</placekey>
+<placekey>King County</placekey>
+<placekey>WA</placekey>
+<placekey>Snohomish County</placekey>
+</place>
+</keywords>
+<accconst>None</accconst>
+<useconst>King County data are made available with the understanding that they shall be used exclusively by the obtainer or his/her authorized agents. Digital products may not be reproduced or redistributed in any form or by any means without the express written authorization of King County.</useconst>
+<ptcontac>
+<cntinfo>
+<cntorgp>
+<cntorg>King County GIS Center</cntorg>
+<cntper>Mike Leathers</cntper>
+</cntorgp>
+<cntpos>GIS Data Coordinator</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>201 S Jackson St, Suite 600</address>
+<city>Seattle</city>
+<state>WA</state>
+<postal>98104</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>206-263-4867</cntvoice>
+</cntinfo>
+</ptcontac>
+<browse>
+<browsen>http://www5.kingcounty.gov/sdc/DataImages/wtrbdy.jpg</browsen>
+<browsed>JPG File of layer overlain on base of WA counties or local cities</browsed>
+<browset>JPG</browset>
+</browse>
+<datacred>Pierce County GIS vector data, Snohomish County GIS vector data, King County Water and Land Resources and Washington State Department of Ecology vector data</datacred>
+<native>ESRI ArcGIS 10.0.0.2414</native>
+</idinfo>
+<dataqual>
+<attracc>
+<attraccr>Coded value domains assigned to the Geodatabase were used to standardize coding of all attributes, except FEATURE_ID. Correct assignment of attributes was qualitatively checked only during the Quality Assessment phase, generally by visual inspection. The following tests were also applied in order to minimize the number of or invalid or illogical code assignments: 1. FEATURE_ID must be unique and persistent, though not necessarily sequential without breaks. 2. Potential wetlands cannot be anything but a Lake or Pond (STATUS_ID = 3 and FEAT_TYPE_ID &lt;&gt; 421 must be a empty set) 3. Current Reservoirs cannot be Non water (FEAT_TYPE_ID = 101 and WATER_ID = 0 and RATE_ID = 1 must be an empty set). This test was also peformed for FEAT_TYPE_ID = 106 Fish hatchery 109 Industrial or residential water impoundment 115 Flats (tidal, mud, sand, gravel) 116 Bays, estuaries, gulfs, oceans 400 Rapids 401 Falls 412 Dam, wier or obscured 414 River or stream 415 Aqueduct 416 Flume 421Lake or pond 4. Current Dam, wier or obscured cannot be Water (FEAT_TYPE_ID = 406 and WATER_ID = 1 and RATE_ID = 1 must be an empty set). This test was also performed for FEAT_TYPE_ID = 423 Sand and gravel 902 Fresh water island 901 Marine Island 5. Potential wetlands must be Water (STATUS_ID = 3 and WATER_ID = 0 must be empty) 6. Various test were performed where wildcard queries on the NAME item were compared to the FEAT_TYPE assigned. Though these tests are not absolute due to the way certain features are named, it did allow a search for major blunders. 7. A BIGWATER river must be a RIVER/STREAM type (SUBSET_ID =1 and FEAT_TYPE_ID &lt;&gt; 412 must be empty). The exception are FLUMES which are considered connecting segments of a river rather than obscure. 8. A BIGWATER lake must be LAKE/POND type (SUBSET_ID =2 and FEAT_TYPE_ID &lt;&gt; 421 must be empty). Some exceptions are allowed for tidal flats (part of Sound), Reservoirs, and obscured dockland areas which are included in the BIGWATER representation. 9. BIGWATER features (both rivers and lakes) must not be too small. No features below a threshhold of Shape.area &lt; 5000 are allowed, except dockland area polygons. 10. NULLs or no value values are not allowed in any item, except for the NAME item where blanks (no value) are allowed. 11. The maintenance database includes two addition items not included in the production warehouse database. The userid of the editor and the date edited are captured. This has been set to a publication default for this version but will be maintained for all future edits.</attraccr>
+</attracc>
+<logic>Areal waterbodies were captured based on their visible extent. Depending on the orientation of the orthoimagery some edges may be better defined than others. Edges of water bodies were adjusted when edge-of-water vegetation masked the actual water/land interface. Though dependent on interpretation, generally the edge of a water body was defined at half the width of the edge vegetation. This is also true for edge of double-banked stream interpretations. Only features that exhibited open water are included in this layer. However, to ensure completeness leeway was allowed to the editors to interpret the outer extent of the water body when broken by tree and shrub clusters or covered by surface-only vegetation.This may result in some inconsistency in how different water bodies are represented.</logic>
+<complete>Features were capture or updated for the entire King County area. Outside of King County, features were updated within the extent of the three main image datasets used: 2002 USGS/KC orthoimagery, 2005 Aerials Express orthoimagery, and 2006 National Agricultural Inventory Program (NAIP) orthoimagery. Outward from the extent of the imagery to the extent of the layer, vector data from adjacent counties and state agency data was used. All features visible during the data development or quality assessment phases were captured, limited only by the ability to resolve at the capture scale. Small manmade features such as swimming pools, smaller landscape ponds, and other recreational water facilities were not included. Smaller features of interest may have been missed due to vegetation masking, or questions as to type of feature due to resolution of imagery. New features will be added and existing features corrected, based on user feedback and when the layer is reevaluated with 2007 imagery, when available.</complete>
+<posacc>
+<horizpa>
+<horizpar>Within the extent of orthoimagery used for capture and validation, the accuracy of the features are dependent on the accuracy of the imagery. The original coverage data in this layer was updated using the 2002 King County Natural Color orthoimagery. This imagery is considered to be the most spatially accurate of the four imagery sets used for this edition. Within the limits of the the visual resolution and editor digitizing, features with this source are accurate to plus/minus 2 feet. Where the 2002 USGS imagery was used (outside of the extent of the King County product), the accuracy is stated as 0.5 meter. There is no accuracy statement for the 2005 Aerials Express imagery, though where the same feature appeared in 2002 and 2005, the 2002 imagery location was chosen. The accuracy of the 2006 NAIP imagery is stated as current to FSA specifications. Due to its resolution and quality, this data was used only in cases where other data was not available to to define a feature was no longer present in 2006 or to create a new feature until it can be confirmed with more accurate 2007 data.</horizpar>
+</horizpa>
+</posacc>
+<lineage>
+<procstep>
+<procdesc>Updated Covington polygons to be detention ponds not lake or pond. Renamed Hicks Lane to Hicklin Lake. Added name to Lake Kenyon</procdesc>
+</procstep>
+<procstep>
+<procdesc>Updates using 2007 (July-August) Pictometry Orthoimagery begun. Per editing rules outlined in DataSet Overview, this imagery was used to check and update all features within the imagery project area. New features added and source code updated. Boundaries of existing features are edited if adjustment required is minor; otherwise existing feature is moved to OLD status and new feature created. For all features, reviewed and/or edited, the source code was updated to reflect 2007 review. See Project Plan for additional details. Columns AA thru AN were completed at the start of the update. Three additional editors were assigned areas east of Column AN to assist in completing review of WTRBDY_AREA against the 2007 imagery. They worked on aerial waterbodies only, double-banked streams and edge-of-water (Puget Sound) are being handled separately.</procdesc>
+</procstep>
+<procstep>
+<procdesc>Complete tile-by-tile editing on 7500 tile scheme based on 2002 imagery</procdesc>
+</procstep>
+<procstep>
+<procdesc>Update with 2005 and 2006 imagery on township tile-by-tile basis. Includes quality review of existing 2002 features. Establish history capture and topology relationships.</procdesc>
+</procstep>
+<procstep>
+<procdesc>WTRBDY was created in a 1997 joint project between WA Dept of Ecology and King County Water and Land Division from an initial source coverage of the standard WA Dept. of Natural Resources hydrography layer. This data set is integrated from numerous sources, primarily at 1:24,000 scale. More information about this initial version, some of which still applies to the current version, can be found in this supplemental document. Beginning in 2001, WLRD started updating this coverage with additional information from other jurisdictions and field data.</procdesc>
+<procdate>19970101</procdate>
+</procstep>
+<procstep>
+<procdesc>Pilot area project</procdesc>
+<procdate>20050101</procdate>
+</procstep>
+<procstep>
+<procdesc>Significant edge of water development</procdesc>
+<procdate>20050101</procdate>
+</procstep>
+<procstep>
+<procdesc>Double-banked stream editing and publication of BIGWATER</procdesc>
+<procdate>20060101</procdate>
+</procstep>
+<procstep>
+<procdesc>Establish edit base from legacy and external data</procdesc>
+<procdate>20060101</procdate>
+</procstep>
+<procstep>
+<procdesc>Assign and validate coded-value-domain assignments and final modifications to schema.</procdesc>
+<procdate>20070101</procdate>
+</procstep>
+<procstep>
+<procdesc>Final quality assessment and validation prior to version 1 edition</procdesc>
+<procdate>20070301</procdate>
+</procstep>
+<procstep>
+<procdesc>General maintenance items based on user feedback. - Angel Lake renamed Angle Lake - Howard Hansen Reservoir was incorrectly labeled Chester Morse Lake. Corrected. - A small slough north of Mercer Slough Nature Park was edited so that the land between the two branches of the slough appears as non-water rather than an island.</procdesc>
+<procdate>20070710</procdate>
+</procstep>
+<procstep>
+<procdesc>CHANGE IN GEOMETRY MODEL FOR PUBLISHED SDW VERSION: Prior to publication of user version to Spatial Data Warehouse the following geometry revisions are made programatically. 1. Freshwater islands are erased from underlying double-banked stream geometry 2. Manmade over-water features (Dams, wiers, docks, etc) are erased from the underlying waterbody.</procdesc>
+<procdate>20080401</procdate>
+</procstep>
+<procstep>
+<procdesc>The existing version of WTRBDY depended on Geodatabase Coded Value Domains (CVDs). These relate a stored integer value to a look-up value in the CVD. To make the resulting SDW featureclass and shapefile appear similar and to ensure that attribute value persist even when changes to the look-up value of the CVD changes, the information in the CVDs is hardcoded into the schema of the version of WTRBDY_AREA posted to the SDW. This required addition of the following items: STATUS_CD - Integer value for STATUS item WATER_CD - Integer value for WATER item SUBSET_CD - Integer value for SUBSET item TYPE_CD - Integer value for FEAT_TYPE item SOURCE_CD - Integer value for SOURCE item</procdesc>
+<procdate>20080401</procdate>
+</procstep>
+<procstep>
+<procdesc>CHANGE IN PRIMARY GEOMETRY MODEL: Marine island polygons (those in Puget Sound, including Vashon), and Mercer Island polygon were permanently removed. The tide line in Puget Sound has been removed.</procdesc>
+<procdate>20080401</procdate>
+</procstep>
+<procstep>
+<procdesc>Lake Garrett (in Lakewood Park in White Center) is renamed Hicks Lake. This is based on input from the public, internal usage, and USGS GNIS reference. The lake still maintains the alternate name of Lake Garrett.</procdesc>
+<procdate>20080926</procdate>
+</procstep>
+<procstep>
+<procdesc>Misspelling for 'South Fork Snoqualmie River' fixed. Misspelling for Hanson Reservoir corrected.</procdesc>
+<procdate>20090901</procdate>
+</procstep>
+<procstep>
+<procdesc>Rate = BAD features were removed. These BAD features were features originally coded as waterbodies prior to the 2007 imagery update. Reviewing against the 2007 imagery indicated that these features are not valid waterbodies. Editors are instructed not to remove feature during review, but to code RATE = BAD. The BAD features were written to a shapefile in the SupportingData folder in the workspace.</procdesc>
+<procdate>20091008</procdate>
+</procstep>
+<procstep>
+<procdesc>Updated WTRBDY by 2010 ortho imagery. Also compared data from Covington with KC WTRBDY for updates. At same time updating WTRCRS so that WTRBDY aligns with WTRCRS.</procdesc>
+<procdate>20110501</procdate>
+</procstep>
+<procstep>
+<procdesc>Using data provided by Kitsap County for their Puget Sound shoreline, updated WTRBDY_AREA using the UPDATE tool. The polygon provided by Kitsap was a land polygon. A background polygon was created and the land erased, creating a water image. This polygon was used to UPDATE the master database with the BORDER option unchecked (remove outer border after update). This process updated all those areas where WTRBDY_AREA's edge fell within the Kitsap representation, generally moving the edge of water inland. Where WTRBDY was currently shoreward of the Kitsap representation, no update was preformed. These areas will be manually-edited.</procdesc>
+<procdate>20120215</procdate>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<sdtstype>GT-polygon composed of chains</sdtstype>
+<ptvctcnt>0</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>PLIBRARY.HYDRO.xxxx53727</enttypl>
+<enttypd>Waterbody polygon attributes</enttypd>
+<enttypds>ESRI</enttypds>
+</enttyp>
+<attr>
+<attrlabl>OBJECTID</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>FEATURE_ID</attrlabl>
+<attrdef>Unique identifier for each feature</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<udom>Unique and persistent, non-sequential positive integer</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>NAME</attrlabl>
+<attrdef>Name of geographic feature</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<udom>Mixed case name of feature, where known; otherwise blank</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SUBSET_CD</attrlabl>
+<attrdef>Integer value that classifies larger, more significant lakes and rivers</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Wtrbdy all</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SUBSET</attrlabl>
+<attrdef>String value that classifies larger, more significant lakes and rivers</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>Wtrbdy all</edomv>
+						<edomvd>Feature not part of BIGWATER cartographic set</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>TYPE_CD</attrlabl>
+<attrdef>Integer value for type of water feature or non water feature</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>101</edomv>
+						<edomvd>Reservoir</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>WATER</attrlabl>
+<attrdef>String value that classifies water from land</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>Non water</edomv>
+						<edomvd>Land areas</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>WATER_CD</attrlabl>
+<attrdef>Integer value that classifies water from land</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Water</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>FEAT_TYPE</attrlabl>
+<attrdef>String value for type of water feature or non water feature</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>Reservoir</edomv>
+						<edomvd>Manmade reservoir or impoundment larger than detention pond</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>STATUS_CD</attrlabl>
+<attrdef>Integer value that classifies for wetland potential</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Possible wetland</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>STATUS</attrlabl>
+<attrdef>String value that classifies for wetland potential</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>Not a wetland</edomv>
+						<edomvd>Not considered to be a wetland or part of a wetland area</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>RATE_CD</attrlabl>
+<attrdef>Integer value defining whether feature is current or historic</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Current</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>RATE</attrlabl>
+<attrdef>String value defining whether feature is current or historic</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>Current</edomv>
+						<edomvd>Feature is observed in most current control imagery</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SOURCE_CD</attrlabl>
+<attrdef>Integer value defining source of feature extent and attributes</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>2035</edomv>
+						<edomvd>Kitsap vector data</edomvd>
+						<edomvds>King County</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>DATASOURCE</attrlabl>
+<attrdef>String value defining source of feature extent and attributes</attrdef>
+<attrdefs>King County</attrdefs>
+<attrdomv>
+					<udom>Name of orthoimagery control where used for capture and validation, or name of vector dataset is appended to area outside of control</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SHAPE</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SHAPE.area</attrlabl>
+<attrdef>Area of feature in square feet</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Area in square feet</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SHAPE.len</attrlabl>
+<attrdef>Perimeter or length of feature or feature segment</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Feature length or perimeter in square feet</udom>
+				</attrdomv>
+</attr>
+</detailed>
+<overview>
+<eaover>Not all attributes found in the maintenance database are included in this production warehouse version. Feature-level metadata tags have been dropped as well as legacy attributes that had previously been maintained. 
+
+The attributes provide required information for feature type determination, cartographic symbolization, provenance  and topological associations. 
+
+Users should keep in mind two of the attributes, though based on ancillary data or comparative imagery analyses, contain subjective interpretations.
+
+1. To assist users in a gross differentiation between 'natural' features and 'manmade features' areal waterbodies may be coded as FEAT_TYPE = Lake or Pond or as FEAT_TYPE = Residential or industrial water impoundments, respectively. This classication is not absolute and is based on a qualitative evaluation of the feature extent, boundary and appearance. However, any features seen in 2005/2006 imagery but not in early imagery are coded as impoundments. The FEAT_TYPE value assigned to individual features will be modified as necessary during maintenance cycles.
+
+2. To assist users in making possible interpretations regarding wetland coincidence, the STATUS item is coded as POTENTIAL WETLAND where ancillary data provides this indication. The ancillary data includes the original coverage interpretation where the extent of the water body included non-water boundary areas and vector data compiled from many sources. Not all potential wetland areas are indicated and further refinement is anticipated.</eaover>
+<eadetcit>King County</eadetcit>
+</overview>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>KCGIS Center</cntorg>
+<cntper>Cheryl Wilder</cntper>
+</cntorgp>
+<cntpos>Data Sales Coordinator</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>201 S Jackson St, Suite 700</address>
+<city>Seattle</city>
+<state>WA</state>
+<postal>98104</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>206-263-5220</cntvoice>
+</cntinfo>
+</distrib>
+<resdesc>/plibrary2/hydro/shapes/polygon/wtrbdy.shp</resdesc>
+<distliab>King County disclaims any warranty of use of any digital product or data beyond that for which it was designed.</distliab>
+<stdorder>
+<digform>
+<digtinfo>
+<formname>ESRI Shapefile</formname>
+</digtinfo>
+</digform>
+<fees>Contact KCGIS Client Services for the cost of reproduction - http://www.kingcounty.gov/operations/GIS/GISData/GISDataDistribution.aspx</fees>
+</stdorder>
+</distinfo>
+<metainfo>
+<metd>20120417</metd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>King County GIS Center</cntorg>
+<cntper>Mike Leathers</cntper>
+</cntorgp>
+<cntpos>GIS Data Coordinator</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>201 S Jackson St, Suite 600</address>
+<city>Seattle</city>
+<state>WA</state>
+<postal>98104</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>206-263-4867</cntvoice>
+<cntemail>firstname.lastname@kingcounty.gov</cntemail>
+</cntinfo>
+</metc>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+</metainfo>
+</metadata>

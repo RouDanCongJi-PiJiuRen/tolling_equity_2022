@@ -1,0 +1,31 @@
+bashscripts
+- Date: July 2019
+- Point person: Shirley
+- Associated analyses/files: all files in this dir
+- Description: a bit complicated, see "Summary of steps to download travel time data" in "Methdology and Data Downloading" folder in shared Google Drive 
+
+concatenated_405_travel_times_5am_to_8pm_5min.csv
+- Date: July 2019
+- Source: made using xlsxfiles + pythonscripts in this dir 
+- Point person: Shirley
+- Associated analyses/files: xlsxfiles and pythonscripts dirs 
+- Description: travel times every 5 min for every possible 405 trip in GP and HOT lanes
+
+downloadscripts
+- Date: July 2019
+- Point person: Shirley
+- Associated analyses/files: all files in this dir
+- Description: a bit complicated, see "Summary of steps to download travel time data" in "Methdology and Data Downloading" folder in shared Google Drive 
+
+pythonscripts
+- Date: July 2019
+- Point person: Shirley
+- Associated analyses/files: all files in this dir
+- Description: Creates "concatenated_405_travel_times_5am_to_8pm_5min.csv" from excel files in xlsxfiles
+
+xlsxfiles
+- Date: July 2019
+- Source: stored on shared Google Drive/Data you can use/TRACFLOW Travel Times/, https://remoteappsqa.wsdot.wa.gov/trip/adhoc-trip/ + somewhat complicated automated downloading process
+- Point person: Shirley
+- Associated analyses/files: all files in this dir
+- Description: travel times on 405 between all possible entry/exit plaza combos every 5 min in GP and HOT lanes

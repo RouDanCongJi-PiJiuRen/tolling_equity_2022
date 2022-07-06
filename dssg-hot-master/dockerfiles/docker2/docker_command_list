@@ -1,0 +1,13 @@
+-----------------------------------------------------
+SPECIFIC COMMANDS (copy/paste to run)
+-----------------------------------------------------
+docker build -t docker2:v1 .
+
+--> this one for Shirley's local machine
+docker run --rm -e HOT_KEY=$(openssl rsautl -decrypt -oaep -inkey ~/.ssh/id_rsa -in ~/Desktop/githubrepos/dssg-hot/data/shirleydata/sqldbs/shirley.pub-secret.key.enc) -i -t --mount type=bind,src=/Users/shirleyswirley/Desktop/githubrepos/dssg-hot,dst=/opt/dssg-hot -p 8877:8877 docker2:v1
+
+--> this one for google cloud
+docker run --rm -e HOT_KEY=$HOT_KEY -i -t --mount type=bind,src=/home/shirlleu/dssg-hot,dst=/opt/dssg-hot -p 8877:8877 docker2:v1
+
+--> this one for aws
+docker run --rm -e HOT_KEY=$HOT_KEY -i -t --mount type=bind,src=/home/ubuntu/dssg-hot,dst=/opt/dssg-hot -p 8877:8877 docker2:v1

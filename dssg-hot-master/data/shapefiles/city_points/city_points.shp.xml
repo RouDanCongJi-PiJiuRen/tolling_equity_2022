@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Derek Drake/GIS/Cartography Section, Washington State Department of Transportation</origin>
+				<pubdate>20100108</pubdate>
+				<title>City Centroids of Washington State</title>
+				<geoform>vector digital data</geoform>
+				<pubinfo>
+					<pubplace>Olympia, Washington, USA</pubplace>
+					<publish>CGIS</publish>
+				</pubinfo>
+				<ftname Sync="TRUE">PoliticalAdministrative.BASE.CitiesPoint</ftname><onlink Sync="TRUE"></onlink></citeinfo>
+		</citation>
+		<descript>
+			<abstract>Point file of all incorporated cities in the state of Washington.  Points were taken from the main polygon for each incorporated entity shown in the City Limits of Washington State data set.</abstract>
+			<purpose>This data set is used as a reference layer for geographic information systems at the Washington State Department of Transportation (WSDOT).</purpose>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>20091130</caldate>
+					<time>unknown</time>
+				</sngdate>
+			</timeinfo>
+			<current>ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-124.460039</westbc>
+				<eastbc>-116.876041</eastbc>
+				<northbc>49.015044</northbc>
+				<southbc>45.532992</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">688453.661125</leftbc><rightbc Sync="TRUE">2511469.431425</rightbc><bottombc Sync="TRUE">95236.928740</bottombc><topbc Sync="TRUE">1343071.596780</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>none</themekt>
+				<themekey>Cities</themekey>
+				<themekey>Towns</themekey>
+			</theme>
+			<place>
+				<placekt>None</placekt>
+				<placekey>Pacific Northwest</placekey>
+				<placekey>WA</placekey>
+				<placekey>USA</placekey>
+				<placekey>Washington</placekey>
+				<placekey>United States</placekey>
+			</place>
+		</keywords>
+		<accconst>none</accconst>
+		<useconst>none</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Derek Drake</cntper>
+					<cntorg>GIS/Cartography Office, Washington State Department of Transportation</cntorg>
+				</cntperp>
+				<cntpos>GIS Analyst/Cartographer</cntpos>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>PO Box 47384</address>
+					<city>Olympia</city>
+					<state>WA</state>
+					<postal>98504-7384</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntaddr>
+					<addrtype>physical address</addrtype>
+					<address>818 79th Ave SE, Suite B</address>
+					<city>Tumwater</city>
+					<state>WA</state>
+					<postal>98501</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>360-596-8923</cntvoice>
+				<cntfax>360-596-8905</cntfax>
+				<cntemail>draked@wsdot.wa.gov</cntemail>
+				<hours>7:00 am - 5:30 pm T - F</hours>
+				<cntinst>email, or call and leave a message</cntinst>
+			</cntinfo>
+		</ptcontac>
+		<native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.3500</native>
+		<crossref>
+			<citeinfo>
+				<origin>GIS/Cartography Section, Washington State Department of Transportation</origin>
+				<pubdate>20100108</pubdate>
+				<title>City Limits of Washington State, November 2009</title>
+				<geoform>vector digital data</geoform>
+				<pubinfo>
+					<pubplace>Olympia, Washington, USA</pubplace>
+					<publish>Washington State Department of Transportation</publish>
+				</pubinfo>
+			</citeinfo>
+		</crossref>
+		<natvform Sync="TRUE">SDE Feature Class</natvform></idinfo>
+	<dataqual>
+		<attracc>
+			<attraccr>City names are spelled according to the Washington State Office of Financial Management standards.</attraccr>
+		</attracc>
+		<logic>none</logic>
+		<complete>The data set contains every  incorporated city in Washington.</complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Positional accuracy has not been determined.</horizpar>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccitea>City polygon featureclass</srccitea>
+				<srccontr>The polygons providing point and attribution information.</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>Point symbols were created from the latest city limits update.   There is only one point per city that is placed at the city center.</procdesc>
+				<procdate>20091130</procdate>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">Server=Ursamajor; Service=5151; Database=sde; User=ArcIMS; Version=sde.DEFAULT</srcused><procdate Sync="TRUE">20100118</procdate><proctime Sync="TRUE">12155200</proctime></procstep></lineage>
+		<cloud>0</cloud>
+	</dataqual>
+	<spdoinfo>
+		<indspref>Cities of Washington State</indspref>
+		<direct>Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="PoliticalAdministrative.BASE.CitiesPoint">
+				<sdtstype>Entity point</sdtstype>
+				<ptvctcnt>0</ptvctcnt>
+			</sdtsterm>
+			<esriterm Name="PoliticalAdministrative.BASE.CitiesPoint"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Point</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">281</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance>Coordinate Pair</plance>
+					<coordrep>
+						<absres>0.000328</absres>
+						<ordres>0.000328</ordres>
+					</coordrep>
+					<plandu>survey feet</plandu>
+				</planci>
+				<mapproj><mapprojn Sync="TRUE">Lambert Conformal Conic</mapprojn><lambertc><stdparll Sync="TRUE">45.833333</stdparll><stdparll Sync="TRUE">47.333333</stdparll><longcm Sync="TRUE">-120.500000</longcm><latprjo Sync="TRUE">45.333333</latprjo><feast Sync="TRUE">1640416.666667</feast><fnorth Sync="TRUE">0.000000</fnorth></lambertc></mapproj></planar>
+			<geodetic>
+				<horizdn>D_North_American_1983_HARN</horizdn>
+				<ellips>Geodetic Reference System 80</ellips>
+				<semiaxis>6378137</semiaxis>
+				<denflat>298.257222</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1983_HARN</geogcsn><projcsn Sync="TRUE">NAD_1983_HARN_StatePlane_Washington_South_FIPS_4602_Feet</projcsn></cordsysn></horizsys>
+		<vertdef>
+			<altsys>
+				<altres>1.000000</altres>
+				<altenc>Explicit elevation coordinate included with horizontal coordinates</altenc>
+			</altsys>
+		</vertdef>
+	</spref>
+	<eainfo>
+		<detailed Name="PoliticalAdministrative.BASE.CitiesPoint">
+			<enttyp>
+				<enttypl>PoliticalAdministrative.BASE.CitiesPoint</enttypl>
+				<enttypd>Incorporated cities in Washington state.</enttypd>
+				<enttypds>Cartography Section, Washington State Department of Transportation</enttypds>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">281</enttypc></enttyp>
+			<attr>
+				<attrlabl>CityFIPS</attrlabl>
+				<attrdef>Identifying codes of all Washington cities</attrdef>
+				<attalias Sync="TRUE">City FIPS</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">9</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>CountyFIPS</attrlabl>
+				<attrdef>Identifying code of all Washington counties</attrdef>
+				<attrdefs>USGS</attrdefs>
+				<attalias Sync="TRUE">County FIPS</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">5</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>CountySeat</attrlabl>
+				<attrdef>Whether or not the city is the county seat.</attrdef>
+				<attalias Sync="TRUE">County Seat</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>GNIS</attrlabl>
+				<attrdef>Geographic Names Information System</attrdef>
+				<attrdefs>Federal Code</attrdefs>
+				<attalias Sync="TRUE">GNIS</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">38</atprecis><attscale Sync="TRUE">8</attscale></attr>
+			<attr>
+				<attrlabl>LastUpdate</attrlabl>
+				<attrdef>This is the ending date of the quarter the city boundary was last modified.</attrdef>
+				<attrdefs>Washington State Office of Financial Management</attrdefs>
+				<attalias Sync="TRUE">LastUpdate</attalias><attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">36</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>MajorCity</attrlabl>
+				<attrdef>A major city is defined as; a County Seat, largest City in the County, large population, or if the city is a major juction.  Up to 5 per county.</attrdef>
+				<attalias Sync="TRUE">Major City</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>NAME</attrlabl>
+				<attrdef>Name of the incorporated entity.</attrdef>
+				<attrdefs>Office of Finance and Management</attrdefs>
+				<attalias Sync="TRUE">Name</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">40</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>OBJECTID</attrlabl>
+				<attrdef>Internal feature number.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OBJECTID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+		</detailed>
+		<overview>
+			<eaover>Points depict  Washington State cities and are attributed with the cities' names, FIPS codes, and GNIS codes.</eaover>
+		</overview>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>Jordyn Mitchell</cntper>
+					<cntorg>Washington State Department of Transportation, Office of Information Technology</cntorg>
+				</cntperp>
+				<cntpos>GIS Data  Administrator</cntpos>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>PO Box 47430</address>
+					<city>Olympia</city>
+					<state>WA</state>
+					<postal>98504-7430</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>360-705-7645</cntvoice>
+				<cntfax>360-705-6817</cntfax>
+				<cntemail>mitchejo@wsdot.wa.gov</cntemail>
+			</cntinfo>
+		</distrib>
+		<distliab>The Washington State Department of Transportation shall not be liable for any activity involving these data with regard to lost profits or savings or any other consequential damages; or the fitness for use of the data for a particular purpose; or the installation of the data, its use, or the results obtained.</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formspec>Various formats are used: ESRI coverages and shapefiles, and data tables for placement as ArcView "events."</formspec>
+					<formcont>
+The standard distribution compact disc contains all geospatial data sets created by the Washington State Dept. of Transportation. Refer to the included Geodata.txt text file for a brief description of the directory structure.
+Data formats vary--most data are stored as ESRI shape files, but some data models require coverages. There are also dbf-format tables of data located by geographic coordinates or State Route Accumulated Route Mileage.
+</formcont>
+					<asciistr>
+						<casesens>false</casesens>
+					</asciistr>
+				</digtinfo>
+				<digtopt>
+					<offoptn>
+						<offmedia>CD-ROM</offmedia>
+					</offoptn>
+				</digtopt>
+			</digform>
+			<fees>none</fees>
+			<ordering>Call, email or write the Distributor with requests for geo-spatial data sets.</ordering>
+			<turnarnd>Generally, the standard compact disc containing all distributed data can be sent within one week of receiving a data request.</turnarnd>
+		</stdorder>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>self-extracting zip file</formname>
+					<formvern>6.3 SR-1 (926) 32-bit</formvern>
+					<formspec>WinZip</formspec>
+					<formcont>Depends on the data set. Arc/Info coverage or shape file; metadata report in html and text files; and, in some cases, a data dictionary text file. Some data sets in the standard distribution are tabular data for placement as ArcView "events."</formcont>
+					<filedec>Run the "exe" file under Windows NT.</filedec>
+					<asciistr>
+						<casesens>false</casesens>
+					</asciistr>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<accinstr>Use anonymous FTP login or web browser download on the URL specified under Network Address.</accinstr>
+						<oncomp>Unix</oncomp>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>none</fees>
+			<ordering>Download individual data sets from http://www.wsdot.wa.gov/mapsdata/geodatacatalog/default.htm</ordering>
+		</stdorder>
+		<stdorder>
+			<nondig>The Cartography/GIS Section can plot maps of most geospatial data sets.</nondig>
+			<fees>depend on plotting costs.</fees>
+			<ordering>Contact the Point of Contact listed under the Identification Section to determine the availability of this data set in a non-digital representation.</ordering>
+		</stdorder>
+		<availabl>
+			<timeinfo>
+				<sngdate>
+					<caldate>20071231</caldate>
+					<time>unknown</time>
+				</sngdate>
+			</timeinfo>
+		</availabl>
+	</distinfo>
+	<metainfo>
+		<metd>20100108</metd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>Derek Drake</cntper>
+					<cntorg>WSDOT GIS/Cartography Office</cntorg>
+				</cntperp>
+				<cntpos>GIS Analyst</cntpos>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>PO Box 47384</address>
+					<city>Olympia</city>
+					<state>WA</state>
+					<postal>98504-7384</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntaddr>
+					<addrtype>physical address</addrtype>
+					<address>818 79th Ave SE, Suite B</address>
+					<city>Olympia</city>
+					<state>WA</state>
+					<postal>98501</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>360-596-8923</cntvoice>
+				<cntfax>360-596-8905</cntfax>
+				<cntemail>draked@wsdot.wa.gov</cntemail>
+				<hours>7:00 - 5:30 T - F</hours>
+				<cntinst>call or email</cntinst>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+		<mettc>local time</mettc>
+		<metac>none</metac>
+		<metuc>none</metuc>
+		<langmeta Sync="TRUE">en</langmeta><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><CreaDate>20100118</CreaDate><CreaTime>12155200</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20100110</SyncDate><SyncTime>15423900</SyncTime><ModDate>20100110</ModDate><ModTime>15425600</ModTime><MetaID>{7DB2F045-163D-457F-88E2-09CFA1FF8D6C}</MetaID></Esri></metadata>

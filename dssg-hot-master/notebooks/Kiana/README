@@ -1,0 +1,24 @@
+# Using Shirley temp for README :)
+
+Folders:
+
+figs - folder containing saved out figures from notebooks
+
+sql - folder containing sql code 
+
+Code:
+
+clustering.ipynb - Making different clusters based on different travel pattern and characteristics 
+
+Hov_PSRC.ipynb - Analyzing HOV and SOV users in Puget sound regional council trip survey
+
+crash_analysis.ipynb - Making some preliminary analysis on crash data along I-405
+
+Suit_index_city.ipynb - Using ecological regression for developing suits index at city level
+
+suits_index.ipynb - Previous methodology for developing suits index at county level 
+
+testdb.ipynb - Matching travel time savings and travel time reliability to the trips
+
+Travel_time.ipynb - Quality check and analyzing the travel time data
+

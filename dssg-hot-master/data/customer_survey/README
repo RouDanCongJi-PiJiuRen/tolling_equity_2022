@@ -1,0 +1,6 @@
+customer_survey_responses_405_2018.csv:
+- Date: late June 2019
+- Source: "2018 405 customer survey - raw data.xlsx" from shared Google Drive, tab named "20180926183831-SurveyExport"
+- Point person: Mark, Shirley (downloaded xlsx and made it into a csv)
+- Associated analyses/files: notebooks/shirley/customer_survey_analysis.ipynb 
+- Description: Mark said: "I just received and have uploaded to the Google Drive the latest WSDOT survey data from 2018.  It includes a zip code location and income information. 1795 responses."

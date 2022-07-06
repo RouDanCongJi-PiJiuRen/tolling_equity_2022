@@ -1,0 +1,18 @@
+concatenated_405_prices_2018.csv
+- Date: Early July 2019
+- Source: See pythonscripts/xlsx_to_csv_405_prices_2018.ipynb
+- Point person: Shirley
+- Description: Toll prices in 2018 by trip def id. Also note that the displayed toll files didn't have tolls for trips starting on direct access on ramps (NB2 = 4, NB6 = 8, SB7 = 19). But the tolls for these trips should be the same as if they entered at the toll gate just upstream of the ramp.
+
+pythonscripts
+- Date: July 2019
+- Point person: Shirley
+- Associated analyses/files: all files in this dir
+- Description: Creates "concatenated_405_prices_2018.csv" from excel files stored on shared Google Drive
+
+xlsxfiles
+- Date: July 2019
+- Source: stored on shared Google Drive in Data you can use/Toll Prices as CSVs/Toll Rate display values from TSMC
+- Point person: Shirley
+- Associated analyses/files: all files in this dir
+- Description: Mark said: "I put a zip file of (what I think are) the sign message displays of the toll prices for 2018.  This file came from the TSMC, while the previous version of the price files came from the vendors.  As before, there are LOTS of csv files."

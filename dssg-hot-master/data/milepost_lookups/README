@@ -1,0 +1,55 @@
+functioning_loops.csv
+- Date: late July 2019 
+- Source: "trips_lookup_master" Google Sheet, tab by same name on shared Google Drive  
+- Point person: Mark, Shirley (who removed 13.6 southbound and fixed some accidental repeats in the NB column)
+- Associated analyses/files: 
+- Description: mileposts of functioning loops (i.e., inductive-loops for traffic/speed detection)
+
+nb_mileposts_entries_plaza_lookup.csv
+- Date: late July 2019
+- Source: "trips_lookup_master" Google Sheet, tab by same name on shared Google Drive
+- Point person: Shirley
+- Associated analyses/files: 
+- Description: mile posts and associated entry plaza of NB entries
+
+nb_mileposts_exits_plaza_lookup.csv
+- Date: late July 2019
+- Source: "trips_lookup_master" Google Sheet, tab by same name on shared Google Drive
+- Point person: Shirley 
+- Associated analyses/files: 
+- Description: mile posts and associated exit plaza of NB exits
+
+plaza_dist.csv
+- Date: 
+- Source:
+- Point person:
+- Associated analyses/files: 
+- Description:
+
+sb_mileposts_entries_plaza_lookup.csv
+- Date: late July 2019
+- Source: "trips_lookup_master" Google Sheet, tab by same name on shared Google Drive
+- Point person: Shirley 
+- Associated analyses/files: 
+- Description: mile posts and associated entry plaza of SB entries
+
+sb_mileposts_exits_plaza_lookup.csv
+- Date: late July 2019
+- Source: "trips_lookup_master" Google Sheet, tab by same name on shared Google Drive
+- Point person: Shirley 
+- Associated analyses/files: 
+- Description: mile posts and associated exit plaza of SB exits
+
+toll_plaza_mileposts.csv
+- Date: late July 2019
+- Source: "trips_lookup_master" Google Sheet, tab by same name on shared Google Drive
+- Point person: Shirley
+- Associated analyses/files:
+- Description: mile posts of toll plazas (where license plate pics are taken)
+
+trips_entry_exit_summary.csv
+- Date: late July 2019
+- Source: "trips_lookup_master" Google Sheet, tab by same name on shared Google Drive
+- Point person: Shirley
+- Associated analyses/files: 
+- Description: list of all combos of entry/exit plaza in 2018 trips! plus their mile posts and counts! THIS IS THE TABLE WITH ALL THE INFO!!!! 

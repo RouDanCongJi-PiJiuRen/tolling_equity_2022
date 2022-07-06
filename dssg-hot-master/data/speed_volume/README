@@ -1,0 +1,26 @@
+concatenated_405_speeds_5am_to_8pm_1min.csv
+- Date: late July 2019
+- Source: stored on shared Google Drive/Data you can use/TRACFLOW Speed and volume, made using xlsxfiles + pythonscripts in this dir 
+- Point person: Shirley
+- Associated analyses/files: xlsxfiles and pythonscripts dirs 
+- Description: speeds at each HOT entry on 405 (speeds were downloaded at 0.5 mi intervals, so the closest 0.5 mi point to each entry was taken) 
+
+concatenated_405_volumes_5am_to_8pm_1min.csv
+- Date: late July 2019
+- Source: stored on shared Google Drive/Data you can use/TRACFLOW Speed and volume, made using xlsxfiles + pythonscripts in this dir 
+- Point person: Shirley
+- Associated analyses/files: xlsxfiles and pythonscripts dirs
+- Description: volumes at each HOT entry on 405 (volumes were downloaded at 0.5 mi intervals, so the closest 0.5 mi point to each entry was taken) 
+
+pythonscripts
+- Date: late July 2019
+- Point person: Shirley
+- Associated analyses/files: all files in this dir
+- Description: Creates "concatenated_405_speeds_5am_to_8pm_1min.csv" and "concatenated_405_volumes_5am_to_8pm_1min.csv" from excel files stored on shared Google Drive/Data you can use/TRACFLOW Speed and volume
+
+xlsxfiles
+- Date: late July 2019
+- Source: stored on shared Google Drive/Data you can use/TRACFLOW Speed and volume, https://remoteappsqa.wsdot.wa.gov/contourdata/brainscan  
+- Point person: Cory
+- Associated analyses/files: all files in this dir
+- Description: volumes and speeds on 405 between the beg/end of the HOT lanes at 0.5 mi intervals

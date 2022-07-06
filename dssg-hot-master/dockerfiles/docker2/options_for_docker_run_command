@@ -1,0 +1,20 @@
+--OPTION 1 build the following Dockerfile
+FROM continuumio/miniconda3
+RUN conda install jupyterlab
+RUN conda install geopandas
+RUN pip install pysqlcipher3
+CMD export HOT_KEY=$(openssl rsautl -decrypt -oaep -inkey /opt/.ssh/id_rsa -in /opt/dssg-hot/data/shirleydata/sqldbs/shirley.pub-secret.key.enc)
+CMD jupyter lab --notebook-dir=/opt/dssg-hot --ip='0.0.0.0' --port=8877 --no-browser --allow-root
+
+Dockerfile for OPTIONS 2 AND 3:
+FROM continuumio/miniconda3
+RUN conda install jupyterlab
+RUN conda install geopandas
+RUN pip install pysqlcipher3
+CMD jupyter lab --notebook-dir=/opt/dssg-hot --ip='0.0.0.0' --port=8877 --no-browser --allow-root
+
+--OPTION 2 run the following in local terminal 
+docker run -e HOT_KEY=$(openssl rsautl -decrypt -oaep -inkey ~/.ssh/id_rsa -in ~/Desktop/githubrepos/dssg-hot/data/shirleydata/sqldbs/shirley.pub-secret.key.enc) -i -t --mount type=bind,src=/Users/shirleyswirley/Desktop/githubrepos/dssg-hot,dst=/opt/dssg-hot -p 8877:8877 docker2:v1
+
+--OPTION 3 bind .ssh dirs
+docker run -i -t --mount type=bind,src=/Users/shirleyswirley/Desktop/githubrepos/dssg-hot,dst=/opt/dssg-hot --mount type=bind,src=/Users/shirleyswirley/.ssh,dst=/opt/.ssh -p 8877:8877 docker2:v1

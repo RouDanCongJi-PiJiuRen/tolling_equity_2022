@@ -1,0 +1,434 @@
+CREATE TABLE TOT AS SELECT T1.*,T2.* FROM trips_linked T1 LEFT JOIN acs T2 on T1.fips =T2.fips_code;
+
+--Adding toll group
+ALTER TABLE TOT ADD toll_group;
+UPDATE TOT SET 
+toll_group = CASE
+WHEN toll >= 0 AND toll <= 1 THEN 0
+WHEN toll > 1 AND toll <=2 THEN 1
+WHEN toll > 2 AND toll <=4 THEN 2
+WHEN toll > 4 AND toll <=6 THEN 3
+WHEN toll > 6 AND toll <=8 THEN 4
+WHEN toll > 8 AND toll <=10 THEN 5
+WHEN toll > 10 THEN 6
+END;
+
+--Adding entry hour
+ALTER TABLE TOT ADD entry_hour;
+UPDATE TOT SET
+entry_hour = CAST(strftime('%H',datetime(entry_time,'unixepoch')) AS INT)
+
+--Adding peak group
+ALTER TABLE TOT ADD peak_group;
+UPDATE TOT SET 
+peak_group = CASE
+WHEN entry_hour >= 05 AND entry_hour <= 09 AND entry_plaza < 13 THEN 0
+WHEN entry_hour >= 05 AND entry_hour <= 09 AND entry_plaza >= 13 THEN 1
+WHEN entry_hour >= 15 AND entry_hour <= 19 AND entry_plaza < 13 THEN 2
+WHEN entry_hour >= 15 AND entry_hour <= 19 AND entry_plaza >= 13 THEN 3
+ELSE 4
+END;
+
+
+--Create table of frequency
+CREATE TABLE frequency AS SELECT id, COUNT(trip_id) FROM TOT GROUP BY id ;
+
+--Joining trip data and frequency
+CREATE TABLE TOT_new AS SELECT T1.*,T2."COUNT(trip_id)" frequency FROM TOT T1 LEFT JOIN frequency T2 on T1.id = T2.id;
+DROP TABLE TOT;
+ALTER TABLE TOT_new RENAME TO TOT;
+
+--Adding frequency group
+ALTER TABLE TOT ADD freq_group;
+UPDATE TOT SET 
+freq_group = CASE 
+WHEN frequency == 1 THEN 0
+WHEN frequency > 1 AND frequency <=20 THEN 1
+WHEN frequency > 20 AND frequency <=70 THEN 2
+WHEN frequency > 70 AND frequency <=200 THEN 3
+WHEN frequency > 200 AND frequency <= 400 THEN 4
+WHEN frequency > 400  THEN 5
+ELSE 6
+END;
+
+
+
+--Adding distance group
+.mode csv
+.import ../dssg-hot/data/milepost_lookups/trips_entry_exit_summary.csv distance
+
+CREATE TABLE distance_new 
+("Downloaded HOV & GP?" INT,
+  "Illegal? (1 = illegal)" INT,
+  entry_plaza INT,
+  exit_plaza INT,
+  "Entry exit concat" INT,
+  "Trip def ID 1 (most common)" INT,
+  "Trip def ID 2 (2nd most common)" INT,
+  "Missing? (1 = missing)" INT,
+  "Count" INT,
+  "Percentage" TEXT,
+  "Actual entry mile post"  real,
+  "Actual exit mile post"  real,
+  "Loop entry mile post"  real,
+  "Loop exit mile post"  real,
+  Dist_btwn_entry_exit_loop  real,
+  "Actual - loop entry mile post"  real,
+  "Actual - loop exit mile post"  real,
+  "Note" TEXT
+);
+
+INSERT INTO distance_new SELECT * FROM distance;
+DROP TABLE distance;
+ALTER TABLE distance_new RENAME TO distance;
+
+CREATE TABLE TOT_new AS SELECT T1.* , T2.Dist_btwn_entry_exit_loop FROM TOT T1 LEFT JOIN distance T2 on (T1.entry_plaza = T2.entry_plaza) AND (T1.exit_plaza = T2.exit_plaza);
+
+DROP TABLE TOT;
+ALTER TABLE TOT_new RENAME TO TOT;
+ALTER TABLE TOT ADD dist_group;
+
+UPDATE TOT SET
+dist_group = CASE
+WHEN Dist_btwn_entry_exit_loop <= 4 THEN 0
+WHEN Dist_btwn_entry_exit_loop > 4 AND Dist_btwn_entry_exit_loop <=6 THEN 1
+WHEN Dist_btwn_entry_exit_loop > 6 AND Dist_btwn_entry_exit_loop <=8 THEN 2
+WHEN Dist_btwn_entry_exit_loop > 8 AND Dist_btwn_entry_exit_loop <=10 THEN 3
+WHEN Dist_btwn_entry_exit_loop > 10 AND Dist_btwn_entry_exit_loop <=12 THEN 4
+WHEN Dist_btwn_entry_exit_loop > 12 THEN 5
+ELSE 6
+END;
+
+--Adding income group 
+ALter TABLE TOT ADD inc_group;
+UPDATE TOT SET 
+inc_group = CASE
+WHEN med_inc <= 65000 THEN 0
+WHEN med_inc > 65000 AND med_inc <= 95000 THEN 1
+WHEN med_inc > 95000 THEN 2
+ELSE 3
+END;
+
+--Adding hov
+ALTER TABLE TOT ADD hov; 
+UPDATE TOT SET
+hov = CASE
+WHEN toll= 0 THEN 0
+ELSE 1
+END;
+
+--Adding reliability
+ALTER TABLE TOT ADD aux1; 
+UPDATE TOT SET
+--NOT correct
+aux1 = CAST(printf('%.2d%.2d', entry_hour, ROUND(CAST(strftime('%M',datetime(entry_time,'unixepoch')) AS real)/5)*5) AS INT);
+UPDATE TOT SET
+aux1 = CAST(printf('%.2d%.2d', entry_hour, CAST(CAST(strftime('%M',datetime(entry_time,'unixepoch')) AS real)/5 AS INT)*5) AS INT);
+
+
+ALTER TABLE TOT ADD aux2; 
+UPDATE TOT SET
+aux2 = printf('%.2d_%.2d', entry_plaza, exit_plaza);
+
+
+.mode csv
+.import ../dssg-hot/data/benefits/expected_reliability_savings.csv reliability
+
+CREATE TABLE reliability_new 
+(tod INT,
+  entr INT,
+  exit INT,
+  trip_id TEXT,
+  reliability real
+);
+
+
+INSERT INTO reliability_new SELECT * FROM reliability;
+DROP TABLE reliability;
+ALTER TABLE reliability_new RENAME TO reliability;
+
+
+ALTER TABLE reliability ADD auxind;  
+UPDATE reliability SET
+auxind = tod || trip_id;
+
+CREATE TABLE TOT_new AS SELECT T1.* , T2.reliability FROM TOT T1 LEFT JOIN reliability T2 on (T1.aux1 = T2.tod) AND (CAST(T1.aux2 AS TEXT)  = CAST(T2.trip_id AS TEXT));
+
+DROP TABLE TOT;
+ALTER TABLE TOT_new RENAME TO TOT;
+
+--Adding TT_time
+UPDATE TOT SET
+aux3 = printf('%s_%.2d_%.2d', 'GP' ,entry_plaza, exit_plaza); 
+ALTER TABLE TOT ADD aux4; 
+UPDATE TOT SET
+aux4 = printf('%s_%.2d_%.2d', 'HOV' ,entry_plaza, exit_plaza);
+ALTER TABLE TOT ADD aux5; 
+UPDATE TOT SET
+--NOT correct
+aux3 = printf('%s%.4d',date(entry_time,'unixepoch'), printf('%.2d%.2d', entry_hour,
+(ROUND(CAST(strftime('%M',datetime(entry_time,'unixepoch')) AS real)/5)*5)));
+UPDATE TOT SET
+aux5 = printf('%s%.4d',date(entry_time,'unixepoch'), printf('%.2d%.2d', entry_hour,CAST(CAST(strftime('%M',datetime(entry_time,'unixepoch')) AS real)/5 AS INT)*5));
+
+ALTER TABLE TOT ADD auxind;  
+UPDATE TOT SET
+auxind = aux1 || aux2;
+
+
+
+.mode csv
+.import ../dssg-hot/data/travel_times/concatenated_405_travel_times_5am_to_8pm_5min.csv TTime
+
+CREATE TABLE TT_new 
+("Time" TEXT,
+  "GP_12_12" real,
+  "HOV_12_12" real,
+  "GP_11_11" real,
+  "HOV_11_11" real,
+  "GP_11_12" real,
+  "HOV_11_12" real,
+  "GP_14_14" real,
+  "HOV_14_14" real,
+  "GP_14_15" real,
+  "HOV_14_15" real,
+  "GP_14_18" real,
+  "HOV_14_18" real,
+  "GP_14_16" real,
+  "HOV_14_16" real,
+  "GP_14_21" real,
+  "HOV_14_21" real,
+  "GP_14_20" real,
+  "HOV_14_20" real,
+  "GP_14_17" real,
+  "HOV_14_17" real,
+  "GP_14_22" real,
+  "HOV_14_22" real,
+  "GP_15_15" real,
+  "HOV_15_15" real,
+  "GP_15_18" real,
+  "HOV_15_18" real,
+  "GP_15_16" real,
+  "HOV_15_16" real,
+  "GP_15_21" real,
+  "HOV_15_21" real,
+  "GP_15_20" real,
+  "HOV_15_20" real,
+  "GP_15_17" real,
+  "HOV_15_17" real,
+  "GP_15_22" real,
+  "HOV_15_22" real,
+  "GP_10_11" real,
+  "HOV_10_11" real,
+  "GP_10_10" real,
+  "HOV_10_10" real,
+  "GP_10_12" real,
+  "HOV_10_12" real,
+  "GP_13_13" real,
+  "HOV_13_13" real,
+  "GP_13_14" real,
+  "HOV_13_14" real,
+  "GP_13_15" real,
+  "HOV_13_15" real,
+  "GP_13_18" real,
+  "HOV_13_18" real,
+  "GP_13_16" real,
+  "HOV_13_16" real,
+  "GP_13_21" real,
+  "HOV_13_21" real,
+  "GP_13_20" real,
+  "HOV_13_20" real,
+  "GP_13_17" real,
+  "HOV_13_17" real,
+  "GP_13_22" real,
+  "HOV_13_22" real,
+  "GP_06_11" real,
+  "HOV_06_11" real,
+  "GP_06_10" real,
+  "HOV_06_10" real,
+  "GP_06_09" real,
+  "HOV_06_09" real,
+  "GP_06_12" real,
+  "HOV_06_12" real,
+  "GP_06_06" real,
+  "HOV_06_06" real,
+  "GP_06_07" real,
+  "HOV_06_07" real,
+  "GP_07_07" real,
+  "HOV_07_07" real,
+  "GP_08_11" real,
+  "HOV_08_11" real,
+  "GP_08_10" real,
+  "HOV_08_10" real,
+  "GP_08_09" real,
+  "HOV_08_09" real,
+  "GP_08_12" real,
+  "HOV_08_12" real,
+  "GP_08_08" real,
+  "HOV_08_08" real,
+  "GP_18_21" real,
+  "HOV_18_21" real,
+  "GP_17_18" real,
+  "HOV_17_18" real,
+  "GP_17_21" real,
+  "HOV_17_21" real,
+  "GP_17_20" real,
+  "HOV_17_20" real,
+  "GP_17_17" real,
+  "HOV_17_17" real,
+  "GP_17_22" real,
+  "HOV_17_22" real,
+  "GP_09_11" real,
+  "HOV_09_11" real,
+  "GP_09_10" real,
+  "HOV_09_10" real,
+  "GP_09_09" real,
+  "HOV_09_09" real,
+  "GP_09_12" real,
+  "HOV_09_12" real,
+  "GP_16_18" real,
+  "HOV_16_18" real,
+  "GP_16_16" real,
+  "HOV_16_16" real,
+  "GP_16_21" real,
+  "HOV_16_21" real,
+  "GP_16_20" real,
+  "HOV_16_20" real,
+  "GP_16_17" real,
+  "HOV_16_17" real,
+  "GP_16_22" real,
+  "HOV_16_22" real,
+  "GP_05_11" real,
+  "HOV_05_11" real,
+  "GP_05_10" real,
+  "HOV_05_10" real,
+  "GP_05_09" real,
+  "HOV_05_09" real,
+  "GP_05_12" real,
+  "HOV_05_12" real,
+  "GP_05_05" real,
+  "HOV_05_05" real,
+  "GP_05_06" real,
+  "HOV_05_06" real,
+  "GP_22_22" real,
+  "HOV_22_22" real,
+  "GP_05_07" real,
+  "HOV_05_07" real,
+  "GP_21_21" real,
+  "HOV_21_21" real,
+  "GP_21_22" real,
+  "HOV_21_22" real,
+  "GP_03_11" real,
+  "HOV_03_11" real,
+  "GP_03_10" real,
+  "HOV_03_10" real,
+  "GP_03_09" real,
+  "HOV_03_09" real,
+  "GP_03_12" real,
+  "HOV_03_12" real,
+  "GP_03_05" real,
+  "HOV_03_05" real,
+  "GP_03_06" real,
+  "HOV_03_06" real,
+  "GP_03_03" real,
+  "HOV_03_03" real,
+  "GP_03_07" real,
+  "HOV_03_07" real,
+  "GP_20_21" real,
+  "HOV_20_21" real,
+  "GP_20_20" real,
+  "HOV_20_20" real,
+  "GP_20_22" real,
+  "HOV_20_22" real,
+  "GP_04_11" real,
+  "HOV_04_11" real,
+  "GP_04_10" real,
+  "HOV_04_10" real,
+  "GP_04_09" real,
+  "HOV_04_09" real,
+  "GP_04_12" real,
+  "HOV_04_12" real,
+  "GP_04_05" real,
+  "HOV_04_05" real,
+  "GP_04_06" real,
+  "HOV_04_06" real,
+  "GP_04_04" real,
+  "HOV_04_04" real,
+  "GP_04_07" real,
+  "HOV_04_07" real,
+  "GP_19_21" real,
+  "HOV_19_21" real,
+  "GP_19_20" real,
+  "HOV_19_20" real,
+  "GP_19_19" real,
+  "HOV_19_19" real,
+  "GP_19_22" real,
+  "HOV_19_22" real,
+  "GP_14_23" real,
+  "HOV_14_23" real,
+  "GP_15_23" real,
+  "HOV_15_23" real,
+  "GP_13_23" real,
+  "HOV_13_23" real,
+  "GP_17_23" real,
+  "HOV_17_23" real,
+  "GP_16_23" real,
+  "HOV_16_23" real,
+  "GP_23_23" real,
+  "HOV_23_23" real,
+  "GP_21_23" real,
+  "HOV_21_23" real,
+  "GP_20_23" real,
+  "HOV_20_23" real,
+  "GP_19_23" real,
+  "HOV_19_23" real
+);
+
+INSERT INTO TT_new SELECT * FROM TTime;
+DROP TABLE TTime;
+ALTER TABLE TT_new RENAME TO TTime;
+
+ALTER TABLE  TTime ADD aux1; 
+UPDATE TTime SET
+aux1 = printf('%s%.2d%.2d',date(Time), strftime('%H',datetime(Time)),strftime('%M',datetime(Time))) 
+
+--Adding cbg data
+.mode csv
+.import ../dssg-hot/data/acs/block_group_census_estimates_wide_wsdot_bins_all_WA.csv cbg
+
+CREATE TABLE cbg_new
+ (fips_code INT,
+  county_name TEXT,
+  county INT,
+  tract INT,
+  block_group INT,
+  households INT,
+  inc_000_020k real,
+  inc_020_035k real,
+  inc_035_050k real,
+  inc_050_075k real,
+  inc_075_100k real,
+  inc_100_125k real,
+  inc_125_150k real,
+  inc_150_200k real,
+  inc_200_infk real,
+  mean_inc real,
+  med_age real,
+  med_inc real,
+  pc_income real,
+  population INT,
+  race_nonhisp_asian real,
+  race_nonhisp_white real,
+  trans_carpool real,
+  trans_drivealone real,
+  trans_transit real 
+);
+
+INSERT INTO cbg_new SELECT * FROM cbg;
+DROP TABLE cbg;
+ALTER TABLE cbg_new RENAME TO cbg;
+ 
+ 
+ 
+CREATE TABLE Agg_final AS SELECT T1.*, printf('%.2d_%.2d',entry_plaza, exit_plaza) AS route FROM Agg T1
+

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Northbound</name>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>NB Sign 1 (entry plaza = NB1 aka 3, entry = NB Entry 1, tolls = NE 124th St, 522, I-5)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1885288,47.6132758,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 1 (entry plaza = NB1 aka 3)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1885701,47.6162739,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB1 (aka 3)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1886115,47.6169103,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 2 (entry plaza = NB2 aka 4, entry = NB Entry 2, tolls = NE 124th St, 522, I-5)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1897919,47.6154114,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 2 (beginning of on ramp) (entry plaza = NB2 aka 4)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1886855,47.6156219,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB2 (aka 4)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1886929,47.6169122,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 2 (end of on ramp) (entry plaza = NB2 aka 4)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.188701,47.6187343,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 3a (entry plaza = NB3 aka 5, entry = NB Entry 3, tolls = none)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1866548,47.6355923,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 3/Exit 1 (beginning) (entry plaza = NB3 aka 5, exit plaza = NB1 aka 3 or NB2 aka 4)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1864831,47.6373547,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 3b (entry plaza = NB3 aka 5, entry = NB Entry 3, tolls = NE 124th, 522, I-5)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1868584,47.6470875,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 3c (entry plaza = NB3 aka 5, entry = NB Entry 3, tolls = none)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1869527,47.6492779,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 3/Exit 1 (end) (entry plaza = NB3 aka 5, exit plaza = NB1 aka 3 or NB2 aka 4)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1869215,47.6532337,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB3 (aka 5)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1869619,47.6592578,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 4a (entry plaza = NB4 aka 6, entry = NB Entry 4, tolls = none)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1829813,47.6848759,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 4/Exit 2 (beginning) (entry plaza = NB4 aka 6, exit plaza = NB3 aka 5)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.182233,47.6871999,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 4b (entry plaza = NB4 aka 6, entry = NB Entry 4, tolls = 522, I-5)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.18165,47.6890737,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 4c (entry plaza = NB4 aka 6, entry = NB Entry 4, tolls = none)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1811928,47.6912004,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 4/Exit 2 (end) (entry plaza = NB4 aka 6, exit plaza = NB3 aka 5)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1796125,47.6997764,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB4 (aka 6)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1792989,47.7024176,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Exit 3 (beginning of off ramp) (exit plaza = NB5 aka 7)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1827928,47.7105866,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB5 (aka 7)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1840015,47.7126079,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Exit 3 (end of off ramp) (exit plaza = NB5 aka 7)
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1851758,47.7146325,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 5a</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1860251,47.714818,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 5b</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1850595,47.7149245,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 5 (beginning of on ramp) (entry plaza = NB6 aka 8)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1854162,47.71504,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB6 (aka 8)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1864629,47.7168468,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 5 (end of on ramp) (entry plaza = NB6 aka 8)
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1876363,47.7189267,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Exit 4 (exit plaza = NB4 aka 6 or NB6 aka 8)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1882566,47.7318704,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB7 (aka 9)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1877291,47.7356624,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 6a (entry plaza = NB8 aka 10, exit plaza = NB7 aka 9, tolls = none)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.19008,47.7719426,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 6/Exit 5 (beginning) (entry plaza = NB8 aka 10, exit plaza = NB7 aka 9)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1922713,47.778578,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 6b (entry plaza = NB8 aka 10, exit plaza = NB7 aka 9, tolls = I-5)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1926893,47.7795737,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 6c (entry plaza = NB8 aka 10, exit plaza = NB7 aka 9, tolls = none)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1938215,47.7816903,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 6/Exit 5 (end) (entry plaza = NB8 aka 10, exit plaza = NB7 aka 9)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1956301,47.7849231,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB8 (aka 10)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.19966,47.787564,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 7a (entry plaza = NB9 aka 11, entry = NB7, tolls = none)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2197719,47.797721,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 7b (entry plaza = NB9 aka 11, entry = NB7, tolls = I-5)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2255202,47.8030687,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 7/Exit 6 (beginning) (entry plaza = NB9 aka 11, exit plaza = NB8 aka 10)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2258415,47.8038053,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Sign 7c (entry plaza = NB9 aka 11, entry = NB7, tolls = none)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2266145,47.8052713,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Entry 7/Exit 6 (end) (entry plaza = NB9 aka 11, exit plaza = NB8 aka 10)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2285725,47.8090463,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB 9 (aka 11)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2290927,47.810007,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB10 (aka 12)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2453239,47.8216365,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NB Exit 7 (exit plaza = NB10 aka 12)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2457979,47.8218073,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

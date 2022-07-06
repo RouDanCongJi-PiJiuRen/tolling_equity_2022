@@ -1,0 +1,68 @@
+block_groups
+- Date: June 2019 
+- Source: tidycensus R package?
+- Point person:
+- Associated analyses/files: 
+- Description: polygons of 2010 Census block groups
+
+block_groups_WA
+- Date: June 2019 
+- Source: 
+- Point person: Kiana
+- Associated analyses/files: 
+- Description: polygons of 2010 Census block groups of Washington State
+
+city_limits
+- Date: July 2019 
+- Source: https://www.wsdot.wa.gov/mapsdata/geodatacatalog/Maps/noscale/DOT_TDO/CityLimits/CityLimits.htm; https://www.wsdot.wa.gov/mapsdata/geodatacatalog/default.htm 
+- Point person: Shirley 
+- Associated analyses/files: 
+- Description: polygons of city limits
+
+city_points
+- Date: July 2019 
+- Source: https://www.wsdot.wa.gov/mapsdata/geodatacatalog/Maps/noscale/DOT_Cartog/citypoints.htm; https://www.wsdot.wa.gov/mapsdata/geodatacatalog/default.htm 
+- Point person: Shirley 
+- Associated analyses/files: 
+- Description: points of city centroids
+
+more_water
+- Date: Sept 2019
+- Source: https://gis-kingcounty.opendata.arcgis.com/datasets/open-water-for-king-county-and-portions-of-adjacent-counties-wtrbdy-area
+- Point person: Shirley
+- Associated analyses/files:
+- Description: more water bodies including puget sound, some not in above water shapefile
+
+roads500k
+- Date: July 2019 
+- Source: https://www.wsdot.wa.gov/mapsdata/geodatacatalog/maps/NOSCALE/DOT_TDO/LRS/500kLRS.htm; https://www.wsdot.wa.gov/mapsdata/geodatacatalog/default.htm 
+- Point person: Shirley 
+- Associated analyses/files: 
+- Description: lines, State Routes of Washington State 1:500,000 (2018)
+
+taz2010
+- Date: mid July 2019 
+- Source: 
+- Point person: Mark 
+- Associated analyses/files: 
+- Description: Traffic analysis zones correspond with data in "berk_405_oct10_2016.xlsx" in income_distribution_berk folder. 
+
+toll_pts_405
+- Date: mid July 2019 
+- Source: Saved out Google Maps map, which can be accessed/edited at the following link: https://www.google.com/maps/d/u/0/edit?hl=en&mid=11ubgIDrkdHDrKBycIS_R4qSpjmX2IHHb&ll=47.71752294582027%2C-122.2125484&z=11 
+- Point person: Shirley 
+- Description: Generated with very meticulous looking at satellite view + streetview on Google Maps to map all the entry/exit points (beg and end), their associated toll plazas, and toll price signs (only northbound for toll price signs though because Shirley got lazy). Saved as a map in Google Maps. Then exported as kml file. Then ran the command line command: "ogr2ogr -f 'ESRI Shapefile' output.shp input.kml" to convert from kml to shapefile. Could probably also use https://mygeodata.cloud/converter/kml-to-shp if you don't have GDAL installed.
+
+transit_stops
+- Date:June 2019
+- Source: https://www.wsdot.wa.gov/mapsdata/geodatacatalog/
+- Point person: Kiana
+- Associated analyses/files: 
+- Description:transit stops in Washington state
+
+water
+- Date:
+- Source:
+- Point person: Cory
+- Associated analyses/files:
+- Description:

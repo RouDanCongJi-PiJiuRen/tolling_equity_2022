@@ -1,0 +1,12 @@
+Exit plaza name,Exit plaza number,Actual exit,Mile post (SRweb),Loop mile post before entry,Loop mile post after entry,Loop mile post to take,"Diff btwn loop mile and actual mile post (pos = take before, neg = take after)",Notes
+SB01,13,SB Entry 2/Exit 1 (midpt),27.61,27.96,27.44,27.44,-0.16,
+SB02,14,SB Entry 3/Exit 2 (midpt),25.95,26.16,25.68,26.16,0.21,
+SB03,15,NA,NA,NA,NA,25.17,,"Shouldn't exist as exit --> arbitrarily chose loop mile post to take, as detailed in ""Summary of steps to download travel time/speed data"" google doc"
+SB04,16,NA,NA,NA,NA,21.83,,"Shouldn't exist as exit --> arbitrarily chose loop mile post to take, as detailed in ""Summary of steps to download travel time/speed data"" google doc"
+SB05,17,SB Entry 7/Exit 4 (midpt),18.95,19.21,18.7,18.7,-0.25,
+SB06,18,SB Exit 3 (beginning of off ramp),20.84,20.93,20.47,20.93,,
+SB07,19,SB Entry 7/Exit 4 (midpt),18.95,19.21,18.7,18.7,-0.25,
+SB08,20,SB Entry 8/Exit 5 (midpt),16.16,16.67,16.12,16.12,-0.04,
+SB09,21,NA,NA,NA,NA,15.08,,"Shouldn't exist as exit --> arbitrarily chose loop mile post to take, as detailed in ""Summary of steps to download travel time/speed data"" google doc"
+SB10,22,SB Exit 7,13.70,13.92,13.6,13.92,0.22,"Manually set ""Loop mile post to take"" to 13.92 b/c 13.6 doesn't exist going SB"
+SB11,23,SB Exit 6 (beginning of off ramp),13.84,13.92,13.6,13.92,0.08,

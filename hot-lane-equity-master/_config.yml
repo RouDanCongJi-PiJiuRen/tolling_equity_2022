@@ -1,0 +1,21 @@
+# Dependencies
+
+# Permalinks
+permalink:        pretty
+
+
+# Setup
+title:            I-405 HOT Lane Equity
+tagline:          ''
+description:      'A 2019 Data Science for Social Good summer fellowship project at the University of Washington' 
+url:              "https://uwescience.github.io"
+baseurl:          "/hot-lane-equity"
+
+
+paginate:         5
+
+# Custom vars
+version:          0.0.0
+
+github:
+  repo:           https://github.com/uwescience/hot-lane-equity/

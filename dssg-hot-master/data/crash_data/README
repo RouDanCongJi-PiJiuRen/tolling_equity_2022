@@ -1,0 +1,13 @@
+crash_data_I405.xlsx
+- Date: June 2019
+- Source: https://www.wsdot.wa.gov/mapsdata/crash/crashdatarequest.htm
+- Point person: Kiana
+- Associated analyses/files: Crash_analysis.ipynb
+- Description: Crashes on I-405 (13-62-30.32 milepost) 01/01/2012 - 12/31/2018	
+
+crash_data_segments.csv
+- Date: August 2019
+- Source: Shirley's mileposts (nb_mileposts_exits_plaza_lookup.csv ,  sb_mileposts_entries_plaza_lookup.csv, and trips_entry_exit_summary.csv)
+- Point person: Kiana
+- Associated analyses/files: Crash_analysis.ipynb
+- Description: segments for analyzing crashes 

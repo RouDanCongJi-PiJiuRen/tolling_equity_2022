@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Southbound</name>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>SB Sign 1 (entry plaza = SB1 aka 13, entry = SB Entry 1, tolls = NE 128th St, NE 85th St, NE 6th St)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2420981,47.8198237,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 1 (entry plaza = SB1 aka 13)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2408967,47.8189532,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB1 (aka 13)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2374031,47.8166026,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 2/Exit 1 (beginning) (entry plaza = SB2 aka 14, exit plaza = SB1 aka 13)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.228177,47.8063519,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 2/Exit 1 (end) (entry plaza = SB2 aka 14, exit plaza = SB1 aka 13)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2247326,47.8008486,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB2 (aka 14)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.2200114,47.7977037,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 3/Exit 2 (beginning) (entry plaza = SB3 aka 15, exit plaza = SB2 aka 14)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.205213,47.7901807,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 3/Exit 2 (end) (entry plaza = SB3 aka 15, exit plaza = SB2 aka 14)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1967214,47.7846245,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB3 (aka 15)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.195607,47.7831833,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 4 (beginning) (entry plaza = SB4 aka 16)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1873327,47.7396275,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 4 (end) (entry plaza = SB4 aka 16)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.187438,47.7387743,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB4 (aka 16)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1878897,47.7356677,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 5 (entry plaza = SB5 aka 17)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1894793,47.7279649,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB5 (aka 17)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.189502,47.722072,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Exit 3 (beginning of off ramp) (exit plaza = SB6 aka 18)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1872354,47.7179427,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Exit 3 (end of off ramp) (exit plaza = SB6 aka 18)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1854984,47.7150334,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB6 (aka 18)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1865518,47.7168162,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 6 (beginning of on ramp) (entry plaza = SB7 aka 19)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1852906,47.7146462,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB7 (aka 19)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1840864,47.7125851,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 6 (end of on ramp) (entry plaza = SB7 aka 19)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1831397,47.710868,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 7/Exit 4 (beginning) (entry plaza = SB8 aka 20, exit plaza = SB5 aka 17 or SB7 aka 19)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1804569,47.6966278,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 7/Exit 4 (end) (entry plaza = SB8 aka 20, exit plaza = SB5 aka 17 or SB7 aka 19)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1829562,47.6858167,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB8 (aka 20)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.186299,47.6728817,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 8/Exit 5 (beginning) (entry plaza = SB9 aka 21, exit plaza = SB8 aka 20)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1871994,47.6537126,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Entry 8/Exit 5 (end) (entry plaza = SB9 aka 21, exit plaza = SB8 aka 20)
+</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1872128,47.6501423,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB9 (aka 21)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.186839,47.6432185,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Exit 6 (beginning of off ramp) (exit plaza = SB11 aka 22)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.188847,47.6183916,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB11 (aka 22)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1887791,47.6169132,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Exit 6 (end of off ramp) (exit plaza = SB11 aka 22)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1887536,47.6156265,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB10 (aka 23)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.1888797,47.6169095,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SB Exit 7 (exit plaza = SB10 aka 23)</name>
+      <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -122.188876,47.6162429,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,23 @@
+Column C from Mark on Slack on 07/16/18,,,,,,Columns D-E from ipynb get_functioning_loops.ipynb
+Plaza ID,Plaza Number,Mile Post,Loop mile post before plaza,Loop mile post after plaza,Loop mile post to take,Name
+NB01,3,13.8,13.6,13.92,13.92,start
+NB02,4,13.8,13.6,13.92,13.92,ramp NE 6th
+NB03,5,16.7,16.67,17.23,16.67,SR 520
+NB04,6,19.7,19.21,19.71,19.71,NE 116th
+NB05,7,20.5,20.47,20.93,20.47,ramp off NE 128th
+NB06,8,20.8,20.47,20.93,20.93,ramp on NE 128th
+NB07,9,22.1,21.83,22.31,22.31,After NE 160th/SR 522
+NB08,10,25.9,25.68,26.16,25.68,To SR 527
+NB09,11,28,27.96,28.53,27.96,After SR 527
+NB10,12,29.2,28.98,29.53,28.98,End
+SB01,13,28.6,28.98,28.53,28.53,start
+SB02,14,27.1,27.44,26.88,26.88,exit to SR 527
+SB03,15,25.5,25.68,25.17,25.68,SR 527
+SB04,16,22.1,22.31,21.83,22.31,SR 522
+SB05,17,21.2,21.36,20.93,21.36,NE 160th
+SB06,18,20.8,20.93,20.47,20.93,ramp off NE 128th
+SB07,19,20.5,20.93,20.47,20.47,ramp on NE 128th
+SB08,20,17.7,17.99,17.49,17.49,NE 70th
+SB09,21,15.6,15.63,15.08,15.63,SR 520
+SB10,22,13.8,13.92,13.6,13.92,End
+SB11,23,13.8,13.92,13.6,13.92,ramp NE 6th

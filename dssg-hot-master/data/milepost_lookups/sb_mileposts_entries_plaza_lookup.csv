@@ -1,0 +1,12 @@
+Entry plaza name,Entry plaza number,Actual entry,Mile post (SRweb),Loop mile post before entry,Loop mile post after entry,Loop mile post to take,"Diff btwn loop mile and actual mile post (pos = take before, neg = take after)",Closest 0.5 mi mp to SRweb mp (or loop mp to take when SRweb mp is missing),Notes
+SB01,13,SB Entry 1,28.89,28.98,28.53,28.98,0.09,29,
+SB02,14,SB Entry 2/Exit 1 (midpt),27.61,27.96,27.44,27.44,-0.16,27.5,
+SB03,15,SB Entry 3/Exit 2 (midpt),25.95,26.16,25.68,26.16,0.21,26,
+SB04,16,SB Entry 4 (midpt),22.50,22.73,22.31,22.31,-0.19,22.5,
+SB05,17,SB Entry 5,21.59,21.83,21.36,21.36,-0.23,21.5,
+SB06,18,NA,NA,NA,NA,20.93,,21,"Shouldn't exist as entry --> arbitrarily chose loop mile post to take, as detailed in ""Summary of steps to download travel time/speed data"" google doc"
+SB07,19,SB Entry 6 (end of on ramp),20.35,20.47,20.22,20.47,0.12,20.5,
+SB08,20,SB Entry 7/Exit 4 (midpt),18.95,19.21,18.7,18.7,-0.25,19,
+SB09,21,SB Entry 8/Exit 5 (midpt),16.16,16.67,16.12,16.12,-0.04,16,
+SB10,22,NA,NA,NA,NA,15.63,,15.5,"Shouldn't exist as entry --> arbitrarily chose loop mile post to take, as detailed in ""Summary of steps to download travel time/speed data"" google doc"
+SB11,23,NA,NA,NA,NA,15.63,,15.5,"Shouldn't exist as entry --> arbitrarily chose loop mile post to take, as detailed in ""Summary of steps to download travel time/speed data"" google doc"
