@@ -1,4 +1,4 @@
-# Code review: DSSG-HOT-MASTER/notebooks
+# Code review: dssg-hot-master/notebooks
 
 ## cj
 ### Notebook Overview
